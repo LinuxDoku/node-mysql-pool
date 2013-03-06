@@ -28,3 +28,8 @@ pool.query('SELECT * FROM users WHERE userID = ?', [userID], function(err, resul
 	// whatever
 });
 ```
+
+## Background Information
+
+* The config parameter poolsize is not allowed to be greater than the mysql "max_connections" system variable. Else you will become an "Too many connections" error.
+* When setting the poolsize you should reserve some left connections for you to administer the database with tools like phpMyAdmin, MySQL Workbench, whatever.

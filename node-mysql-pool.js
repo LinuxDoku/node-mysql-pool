@@ -2,7 +2,7 @@
  * MySQL pool to hold multiple connections to the database server
  *
  * @author	Martin Lantzsch <martin@linux-doku.de>
- * @website http://github.com/LinuxDoku/node-mysql-pool
+ * @website	http://github.com/LinuxDoku/node-mysql-pool
  */
 
 var mysql = require('mysql');
